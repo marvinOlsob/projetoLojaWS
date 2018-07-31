@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <script src="../script/image_preview.js" type="text/javascript"></script>
+        <title>ezCart - Setup</title>
+    </head>
+    <body>
+        <section>
+            <div id="wrapper">
+                <div id="left">
+                    <form action="index.php?opt=17" enctype="multipart/form-data" method="post">
+                        <div id="title">
+                            <p>Name:<br/><input name="prodNam" type="text"/></p>
+                        </div>
+                        <div id="facebook">
+                            <p>Price:<br/><input name="prodPri" type="text"/></p>
+                        </div>
+                        <div id="flickr">
+                            <p>Stock:<br/><input name="prodSto" type="text"/></p>
+                        </div>
+                        <div id="googleplus">
+                            <p>Description:<br/><textarea name="prodDes" rows="5"></textarea></p>
+                        </div>
+                        <div id="pinterest">
+                            <p><?php include_once 'list_category.php'; ?></p>
+                        </div>
+                        <div id="twitter">
+                            <p><?php include_once 'list_supplier.php'; ?></p>
+                        </div>
+                </div>
+                <div id="right">
+                    <div id="logo">
+                        <p>Photo:<br/><input id="prodPho" name="prodPho" onchange="loadPhoto(event)" type="file"/></p>
+                    </div>
+                    <div id="conditions">
+                        <p>* The photo must be in jpeg, jpg or png format.</p>
+                        <p>* The photo can't have more than 3 Mb in size.</p>
+                        <p>* The photo's resolution should be 1:1.</p>
+                    </div>
+                    <div id="logoPreview">
+                        <p></p>
+                        <img id="preview" width="195" height="195"/>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="bottom">
+                    <div id="next_btn">
+                        <input id="submit" type="submit" value="Next"/>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>Copyright &copy; 2014 - 2015 ezCart</p>
+            </div>
+        </section>
+    </body>
+</html>

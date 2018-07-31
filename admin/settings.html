@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="../css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <script src="../script/image_preview.js" type="text/javascript"></script>
+        <title>ezCart - Setup</title>
+    </head>
+    <body>
+        <section>
+            <div id="wrapper">
+                <div id="left">
+                    <form action="index.php?opt=21" enctype="multipart/form-data" method="post">
+                        <div id="title">
+                            <p>Title:<br/><input name="settTit" type="text"/></p>
+                        </div>
+                        <div id="facebook">
+                            <p>Facebook link:<br/><input name="settFac" type="text"/></p>
+                        </div>
+                        <div id="flickr">
+                            <p>Flickr link:<br/><input name="settFli" type="text"/></p>
+                        </div>
+                        <div id="googleplus">
+                            <p>Google+ link:<br/><input name="settGog" type="text"/></p>
+                        </div>
+                        <div id="pinterest">
+                            <p>Pinterest link:<br/><input name="settPin" type="text"/></p>
+                        </div>
+                        <div id="twitter">
+                            <p>Twitter link:<br/><input name="settTwi" type="text"/></p>
+                        </div>
+                </div>
+                <div id="right">
+                    <div id="logo">
+                        <p>Logo:<br/><input id="photo" name="settLog" onchange="loadPhoto(event)" type="file"/></p>
+                    </div>
+                    <div id="conditions">
+                        <p>* The image must be in jpeg, jpg or png format.</p>
+                        <p>* The image can't have more than 3 Mb in size.</p>
+                        <p>* The image's resolution should be 16:10.</p>
+                    </div>
+                    <div id="logoPreview">
+                        <p></p>
+                        <img id="preview" width="240" height="150">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="bottom">
+                    <div id="next_btn">
+                        <input id="submit" type="submit" value="Update"/>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>Copyright &copy; 2014 - 2015 ezCart</p>
+            </div>
+        </section>
+    </body>
+</html>
